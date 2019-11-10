@@ -1,0 +1,61 @@
+.loader-container {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+@media (max-width: 768px) {
+  .loader-container {
+    top: 35%;
+    left: 40%;
+  }
+}
+
+.loading-container {
+  position: fixed;
+  z-index: 999999999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 74, 99, 0.82);
+}
+
+.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
