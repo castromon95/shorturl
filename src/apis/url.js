@@ -1,1 +1,1 @@
-export const myUrl = 'http://localhost:3000';
+export const myUrl = 'https://shortback.herokuapp.com';
